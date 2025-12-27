@@ -1,0 +1,15 @@
+{
+  "name": "KloraDrop",
+  "short_name": "KloraDrop",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#f1fff9",
+  "icons": [
+    {
+      "src": "/img/klora.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

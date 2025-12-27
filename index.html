@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KloraDrop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/klora.png">
+    <link rel="apple-touch-icon" href="/img/klora.png">
+    <meta name="msapplication-TileImage" content="/img/klora.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- index.html -->
+    <div id="loader">
+        <img src="img/logo.png" alt="Logo" class="loader-logo">
+    </div>
+
+    <nav id="navbar" class="hidden-nav">
+        <div class="nav-logo">
+            <img src="img/logo.png" alt="Logo" />
+        </div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Rumah</a></li>
+            <li><a href="acara/acara.html">Acara</a></li>
+            <li><a href="tentang/tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <header id="rumah" class="hero-section">
+        <div class="timer-container">
+            <h2 id="countdown-timer">--:--:--</h2>
+        </div>
+
+        <div class="klora-wrapper">
+            <img src="img/klora.png" alt="Maskot Klora" class="klora" id="klora">
+        </div>
+
+        <p id="random-text" class="motivation-text"></p>
+        <button id="drink-btn" class="drink-button">Minum</button>
+    </header>
+
+    <section class="daily-progress-section">
+        <h3>Total Minum Hari Ini</h3>
+        <p>Jumlah gelas diminum: <span id="daily-total">0</span> / 8 gelas</p>
+    </section>
+
+    <section class="progress-section">
+        <h3>Total Minum Minggu Ini</h3>
+        <p>Jumlah gelas diminum: <span id="weekly-total">0</span> / 56 gelas</p>
+    </section>
+
+    <footer class="main-footer">
+        <p>Lisensi: Apache License 2.0</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
