@@ -1,0 +1,256 @@
+/* acara.css */
+
+:root {
+  --green-light: #B4F1A5;
+  --green-dark: #2D5A47;
+  --white-soft: #F1FFF9;
+  --text-dark: #3D4349;
+  --green-deep: #1A3D32;
+  --orange-soft: #E98B6D;
+  --brown-dark: #A24E35;
+  --soft-blue: #DDF3FF;
+}
+
+body {
+  margin: 0;
+  background-color: var(--white-soft);
+  font-family: 'Inter';
+  color: var(--text-dark);
+  padding-top: 70px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quiksand';
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--white-soft);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20000;
+  transition: opacity 0.6s ease;
+}
+
+#loader.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loader-logo {
+  width: 130px;
+  height: auto;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.08); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.9; }
+}
+
+/* Navbar tersembunyi */
+.hidden-nav {
+  position: fixed;
+  top: -60px;
+  width: 100%;
+  background: var(--green-dark);
+  color: white;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  transition: top 0.4s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.hidden-nav.show {
+  top: 0;
+}
+
+.hidden-nav.show + .hero-section {
+  padding-top: 80px;
+}
+
+.hidden-nav {
+  z-index: 999;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--white-soft);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Quicksand';
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 16px;
+  background: #ffffffaa;
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+}
+
+.nav-logo img {
+  height: 36px;
+  width: auto;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  opacity: 0.6;
+}
+
+.hidden-nav {
+  transform: translateY(-120%);
+  transition: 0.3s ease;
+}
+
+.show {
+  transform: translateY(0);
+}
+
+/* Layout konten Sedang Dalam Konstruksi */
+.construction-section {
+  width: 90%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.construction-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  font-family: 'Quicksand';
+}
+
+.construction-image {
+  width: 90%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+  user-select: none;
+  pointer-events: none;
+}
+
+.uc-container h1 {
+  margin-top: 20px;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.fun-fact-box {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 18px 20px;
+  width: 90%;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--text-dark);
+  font-family: 'Inter';
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.fun-fact-box h3 {
+  margin-bottom: 6px;
+  font-family: "Quicksand";
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+#fun-fact-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.main-footer {
+  margin-top: 80px;
+  padding: 20px;
+  background: var(--green-dark);
+  color: var(--white-soft);
+  font-family: 'Roboto';
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Navbar responsif */
+@media (max-width: 600px) {
+    .nav-menu {
+        gap: 10px;
+        font-size: 0.85rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        padding: 0 10px;
+    }
+
+    .nav-logo img {
+        height: 28px;
+    }
+
+    .hidden-nav {
+        padding: 8px 5px;
+    }
+
+    .hidden-nav.show + .hero-section {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
