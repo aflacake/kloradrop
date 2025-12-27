@@ -15,5 +15,17 @@ Nama Klora kesannya organik, sehat, dan sangat identik dengan tunas hijau (karen
 
 "Drop" artinya tetesan. Sangat visual, seperti embun di atas tunas hijau. Cocok untuk maskot kecambah.
 
+
+# Kontribusi
+KloraDrop masih aktif dikembangkan dan membutuhkan masukan dari banyak sudut pandang. Kamu bisa turut serta dengan cara yang paling nyaman bagimu:
+Memberikan saran fitur atau perbaikan
+
+- Melaporkan bug atau kendala penggunaan
+- Mengusulkan ide tampilan dan pengalaman pengguna
+- Membantu meningkatkan aksesibilitas atau performa
+- Berkontribusi dalam pengembangan kode maupun dokumentasi
+
+Tidak harus seorang programmer untuk membantu. Apapun bentuk partisipasimu sangat berarti untuk meningkatkan kualitas KloraDrop dan membantu lebih banyak orang tetap terhidrasi dengan baik.
+
 # Lisensi
 [Apache-2.0 license](https://github.com/aflacake/ilyasbat-lang/blob/main/LICENSE)
