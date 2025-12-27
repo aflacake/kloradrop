@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang | KloraDrop</title>
+    <link rel="stylesheet" href="tentang.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Inter:wght@300;400;600&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/klora.png">
+    <link rel="apple-touch-icon" href="../img/klora.png">
+    <meta name="msapplication-TileImage" content="../img/klora.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <!-- tentang.html -->
+    <div id="loader">
+        <img src="../img/logo.png" alt="Logo" class="loader-logo">
+    </div>
+
+    <nav id="navbar" class="hidden-nav">
+        <div class="nav-logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+        <ul class="nav-menu">
+            <li><a href="../index.html">Rumah</a></li>
+            <li><a href="../acara/acara.html">Acara</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+        </ul>
+    </nav>
+
+    <main class="about-section" id="tentang">
+        <section class="about-container">
+
+            <h1>Tentang KloraDrop</h1>
+            <p>
+                KloraDrop adalah aplikasi-web untuk membantumu menjaga asupan air minum,
+                mengingatkan waktu minum dan menyimpan progres harianmu.
+                Semua data tersimpan di perangkatmu tanpa memerlukan internet!
+            </p>
+            <p>
+                KloraDrop, aplikasi yang dikembangkan bertujuan seseorang tidak melupakan jam air minumnya, selalu tepat, disiplin, dan target air putih terpenuhi.
+            </p>
+            <p>
+                KloraDrop diambil dari nama "Klora" kesan karakter pintar & terpecaya, aplikasi yang memberikan banyak tips edukasi kesehatan. Karena maskotnya tunas hijau, namanya mengandung 'O' secara psikologis huruf tersebut terdengar lebih "bulat" dan "imut" di telinga, cocok untuk makhluk kecil seperti kecambah.<br>
+                Nama <b>Klora</b> kesannya organik, sehat, dan sangat identik dengan tunas hijau (karena klorofil). Untuk memberikan kesan "disiplin" dan "inum air putih".
+                <br>
+            </p>
+            <p>
+                "Drop" <i>artinya tetesan</i>. Sangat visual, seperti embun di atas tunas hijau. Cocok untuk maskot kecambah. 
+            </p>
+
+            <h2>Pasang KloraDrop sebagai Aplikasi</h2>
+            <p>Kamu bisa pasang KloraDrop seperti aplikasi asli.</p>
+            <button id="install-kloradrop" class="btn-primary" style="display:none;">
+                Install KloraDrop
+            </button>
+            <p class="small-note">Jika tombol tidak muncul, coba gunakan Chrome atau Edge.</p>
+
+            <hr>
+
+            <h2>Informasi Penyimpanan Data</h2>
+            <p>Aplikasi ini mendukung penyimpanan lokal pada:</p>
+
+            <ul class="browser-list">
+                <li>Google Chrome 49+</li>
+                <li>Mozilla Firefox 57+</li>
+                <li>Microsoft Edge 79+</li>
+                <li>Safari iOS/macOS 11+</li>
+                <li>Opera 36+</li>
+                <li>Android Browser Chromium-based</li>
+            </ul>
+
+            <div class="info-box">
+                <p>Jika kamu membersihkan data browser, progres minum akan terhapus.</p>
+            </div>
+
+            <hr>
+
+            <h2>Kelola Data</h2>
+                <h3>Ekspor Data</h3>
+                <p>
+                    Kamu bisa menyimpan data minum ke berkas (.json) agar bisa dipindahkan ke perangkat lain
+                    atau disimpan sebagai cadangan. Berkas ini berisi:
+                </p>
+
+                <ul class="browser-list">
+                    <li>Total minum harian (maks 8 gelas per hari)</li>
+                    <li>Total minum mingguan (maks 56 gelas per minggu)</li>
+                </ul>
+
+                <div class="storage-info">
+                        <h4>Lokasi File Ekspor</h4>
+                        <p>File hasil ekspor akan tersimpan di folder:</p>
+                        <ul>
+                            <li>HP Android/iOS: folder Unduhan atau lokasi yang dipilih melalui dialog simpan</li>
+                            <li>Windows dan macOS: folder Downloads/Unduhan pengguna</li>
+                            <li>Safari iOS: pengguna diminta memilih lokasi penyimpanan</li>
+                        </ul>
+                    </div>
+
+                <button id="export-data" class="install-button">
+                    Ekspor Data KloraDrop
+                </button>
+
+                <p class="small-note">
+                    Data KloraDrop disimpan secara lokal di browsermu
+                    (Chrome, Edge, Firefox, Safari, dll) bukan di server.  
+                    Jika kamu menghapus data browser atau memakai mode penyamaran,
+                    data dapat hilang.
+                </p>
+
+                <h3>Impor Data</h3>
+                <button id="import-data" class="btn-impor">
+                    Impor Data KloraDrop
+                </button>
+
+                <input type="file" id="import-file" accept="application/json" style="display:none;">
+
+                <h3>Hapus Data</h3>
+                <p>Kamu dapat menghapus seluruh data minum yang tersimpan:</p>
+                <button id="reset-data" class="reset-button">
+                    Hapus Data Minum
+                </button>
+                <p class="small-note">Tidak dapat dikembalikan setelah dihapus!</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>Lisensi: Apache License 2.0</p>
+    </footer>
+
+    <script src="tentang.js"></script>
+</body>
+</html>
